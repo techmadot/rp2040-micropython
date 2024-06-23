@@ -1,0 +1,9 @@
+services:
+  micropython-env:
+    build: 
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    command: sleep infinity
+    volumes:
+      - ./:/workspace
+

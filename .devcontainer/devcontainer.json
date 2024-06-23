@@ -1,0 +1,12 @@
+{
+    "name" : "rp2040-env",
+    "dockerComposeFile": [
+        "../compose.yml",
+    ],
+    "service": "micropython-env",
+    "workspaceFolder": "/workspace",
+    "containerEnv": {
+        "PYBOARD_DEVICE" : "/dev/ttyACM0"
+    }
+
+}
